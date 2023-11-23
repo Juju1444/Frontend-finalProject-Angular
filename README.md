@@ -86,7 +86,7 @@ Project Structure
 
 The project is organized into two main directories:
 
-    frontend: Contains the TypeScript-based React frontend.
+    frontend: Contains the TypeScript-based angular frontend.
     backend: Contains the Spring Boot backend.
 
 Class Overview
