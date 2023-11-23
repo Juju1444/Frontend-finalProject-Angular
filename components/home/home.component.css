@@ -1,0 +1,26 @@
+.serv{
+    overflow: hidden;
+}
+
+
+.center-block-slider
+{
+    position: absolute;
+    top: 25%;
+    z-index: 9;
+
+}
+
+.slide .center-block-slider p, 
+.slide .center-block-slider h1,
+.slide .center-block-slider a
+{
+    position: relative;
+    z-index: 9999999;
+}
+
+
+.single-case-block
+{
+    width: 85%;
+}

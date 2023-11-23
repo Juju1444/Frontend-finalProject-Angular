@@ -1,0 +1,53 @@
+<div class="main-page-wrapper">
+
+      
+    <div class="our-solution section-spacing my-5">
+        <div class="container">
+            <div class="theme-title-one">
+                <h2>Login</h2>
+            </div> <!-- /.theme-title-one -->
+            <div class="wrapper">
+                <div class="row w-50 mx-auto">
+
+                    <div class="col-md-12">
+                        <form [formGroup]="signIn" (ngSubmit)="login()">
+                            <div class="form-group my-2">
+                                <label for="">Email</label>
+                                <input formControlName="email" type="email" name="email" class="form-control">
+                            </div>
+                            <div class="form-group my-2">
+                                <label for="">Password</label>
+                                <input formControlName="password" type="password" name="password" class="form-control">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary"> Login</button>
+                        </form>
+                    </div>
+             
+                </div> <!-- /.row -->
+            </div> <!-- /.wrapper -->
+        </div> <!-- /.container -->
+    </div> <!-- /.our-solution -->
+
+
+   
+
+  
+
+    <!--
+    =====================================================
+        Footer
+    =====================================================
+    -->
+    <!-- /.theme-footer-two -->
+    
+
+    <!-- Scroll Top Button -->
+    <button class="scroll-top tran3s">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </button>
+    
+
+
+
+</div> <!-- /.main-page-wrapper -->

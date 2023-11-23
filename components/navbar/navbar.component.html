@@ -1,0 +1,39 @@
+<header class="header-two">
+    
+
+    <div class="theme-menu-wrapper">
+        <div class="container">
+            <div class="bg-wrapper clearfix">
+                <div class="logo float-left"><a routerLink="/home"><img class="logmer" src="../../../assets/images/logo/logo.svg" alt=""></a></div>
+                <!-- ============== Menu Warpper ================ -->
+                <div class="menu-wrapper float-left">
+                    <nav id="mega-menu-holder" class="clearfix">
+                        <ul class="clearfix">
+                            <li class="active"><a  routerLink="/home"  routerLinkActive="">Home</a></li>
+                            <li><a routerLink="/departments" routerLinkActive="">Departments</a></li>
+                            <li><a routerLink="/employees">Employees</a></li>
+                       
+                        </ul>
+                    </nav> <!-- /#mega-menu-holder -->
+                </div> <!-- /.menu-wrapper -->
+                <div class="right-widget float-right">
+                    <ul>
+                        <li *ngIf="auth.isGuest()" >
+                            <a  routerLink="/login" class="btn btn-primary mx-4">Login</a>
+                        </li>
+
+                        <li *ngIf="auth.isGuest()">
+                            <a  routerLink="/register" class="btn btn-primary mr-4">Register</a>
+                        </li>
+
+                        <li *ngIf="auth.isLogedIn()">
+                            <a  (click)="logout()" class="btn btn-danger text-white mr-4">Logout</a>
+                        </li>
+
+                       
+                    </ul>
+                </div> <!-- /.right-widget -->
+            </div> <!-- /.bg-wrapper -->
+        </div> <!-- /.container -->
+    </div> <!-- /.theme-menu-wrapper -->
+</header>
